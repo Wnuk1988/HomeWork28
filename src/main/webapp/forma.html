@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data entry form</title>
+</head>
+<body>
+<form action="/save" method="post">
+    Name: <input name="userName"/>
+    <br>
+    <br>
+    Surname: <input name="userSurName"/>
+    <br>
+    <br>
+    Age: <input name="userAge"/>
+    <br>
+    <br>
+    Gender: <input type="radio" name="gender" value="female" checked/>Female
+    <input type="radio" name="gender" value="male"/>Male
+    <br>
+    <br>
+    Country: <select name="country">
+    <option>Russia</option>
+    <option>Spain</option>
+    <option>France</option>
+    <option>Germany</option>
+    <option>Belarus</option>
+    <option>Poland</option>
+    <option>Ukraine</option>
+</select>
+    <br>
+    <br>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
