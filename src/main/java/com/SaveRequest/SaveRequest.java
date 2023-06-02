@@ -22,7 +22,7 @@ public class SaveRequest extends HttpServlet {
         String surName = req.getParameter("userSurName");
         String age = req.getParameter("userAge");
 
-        if (!name.isEmpty() && !surName.isEmpty() && !age.isEmpty()) {
+        if (!name.isBlank() && !surName.isBlank() && !age.isBlank()) {
             req.getRequestDispatcher("/save-request.jsp").forward(req, resp);
         } else {
             req.getRequestDispatcher("/forma.html");
